@@ -1,8 +1,7 @@
-import { StyleSheet, Text, View, FlatList, RefreshControl, } from 'react-native';
-import React, { useContext, } from 'react';
+import { StyleSheet, Text,FlatList, RefreshControl } from 'react-native';
+import React from 'react';
 import Layout from '../layout/MainLayout';
 import API from '../assets/API';
-import GlobalContext from '../context/globalContext';
 import useGetApiResponse from '../hooks/useGetApiResponse';
 import MenuCard from '../components/MenuCard';
 

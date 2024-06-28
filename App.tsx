@@ -15,6 +15,8 @@ const CombinedLightTheme = {
     primary: Colors.primary, // change this to your desired color
     underlineColor: 'transparent',
     // background: Colors.primary, // change this to your desired color
+
+    secondaryContainer: 'rgba(22, 163, 74, .15)',
   },
 };
 
@@ -30,7 +32,7 @@ const CombinedDarkTheme = {
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
-  const combineTheme = isDarkMode ? CombinedDarkTheme : CombinedLightTheme;
+  const combineTheme = CombinedLightTheme;
   return (
     <GlobalContextProvider>
       <PaperProvider theme={combineTheme}>

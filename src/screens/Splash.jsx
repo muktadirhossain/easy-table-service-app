@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 const Splash = ({ navigation }) => {
   useEffect(() => {
     setTimeout(() => {
-      navigation.navigate('Login')
+      // navigation.navigate('Login')
       // navigation.navigate('BottomNavigation');
     }, 2000)
   }, [navigation])

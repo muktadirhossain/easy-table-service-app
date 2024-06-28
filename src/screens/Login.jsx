@@ -43,7 +43,8 @@ const Login = ({navigation}) => {
       <View className="mx-5">
         <Text className="text-center text-slate-900 font-bold text-2xl">Login</Text>
         <Image
-          className="self-center h-52 w-52 mt-10"
+          className="self-center h-40 mt-2"
+          resizeMode='contain'
           source={login_img} />
         <TextInput
           label="Email/Number"
