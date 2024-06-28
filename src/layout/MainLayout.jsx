@@ -14,7 +14,10 @@ const Layout = ({ children }) => {
                 resizeMode='cover'
                 resizeMethod='scale'
                 className="flex-1 pt-10">
-                <StatusBar translucent={true} barStyle={dark ? 'light-content' : 'dark-content'} backgroundColor={'transparent'} />
+                <StatusBar 
+                translucent={true} 
+                barStyle={'dark-content'} 
+                backgroundColor={'transparent'} />
                 {children}
             </ImageBackground>
         </SafeAreaView>

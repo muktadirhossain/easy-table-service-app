@@ -36,7 +36,7 @@ const CheckOut = () => {
       console.log(res?.data)
       if (res?.data?.statusCode === 200) {
         Alert.alert("Success!", "Your order has been placed successfully!")
-        navigation.navigate("Home")
+        navigation.navigate("BottomNavigation")
       }
     } catch (error) {
       console.error(error)
@@ -148,5 +148,6 @@ const styles = StyleSheet.create({
   totalText: {
     fontSize: 18,
     fontWeight: 'bold',
+    color:'#555',
   },
 });

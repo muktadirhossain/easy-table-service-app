@@ -8,7 +8,7 @@ import Toast from 'react-native-toast-message';
 import MenuDetails from './screens/MenuDetails';
 import CheckOut from './screens/CheckOut';
 import Analytics from './screens/Analytics';
-import AllOrdersList from './screens/AllOrdersList';
+// import AllOrdersList from './screens/AllOrdersList';
 import OrderList from './screens/OrderList';
 import { useContext, useEffect, useState } from 'react';
 import GlobalContext from './context/globalContext';

@@ -41,13 +41,13 @@ const OrderCard = ({ data }) => {
     return (
         <Card className="m-2 pb-3 bg-green-50">
             <Card.Content>
-                <Text className="capitalize" variant="titleLarge">{order?.customerName}</Text>
+                <Text className="capitalize text-xl font-bold py-1 dark:text-black">Customer: {order?.customerName}</Text>
                 <Text>Order Date:{dayjs(order?.createdAt).format("DD-MM-YY")}</Text>
                 <Text variant="bodyMedium">Contact No:  {order?.customerNumber}</Text>
-                <Text className="capitalize">Status: {order?.orderStatus}</Text>
-                <Text variant="bodyMedium">Total Order Item: {order?.orderItems?.length}</Text>
-                <Text variant="bodyMedium" className="mb-1">Order Items:</Text>
-                <View className="flex-row justify-start gap-x-2 flex-wrap">
+                <Text className="capitalize dark:text-black" >Status: {order?.orderStatus}</Text>
+                <Text variant="bodyMedium" className="dark:text-black">Total Order Item: {order?.orderItems?.length}</Text>
+                <Text variant="bodyMedium" className="mb-1 dark:text-black">Order Items:</Text>
+                <View className="flex-row justify-start gap-x-2 flex-wrap dark:text-black">
                     {
                         order?.orderItems?.map((orderItem) => <Text key={orderItem?._id} className="py-1 px-2 bg-slate-500 my-0.5 rounded-sm text-gray-300">{orderItem?.title}</Text>)
                     }

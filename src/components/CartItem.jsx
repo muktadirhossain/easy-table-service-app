@@ -7,9 +7,9 @@ const CartItem = ({ item }) => {
     const { increaseQuantity, decreaseQuantity } = useContext(GlobalContext)
     return (
         <View style={styles.itemContainer}>
-            <Text style={styles.title}>{item.title}</Text>
-            <Text style={styles.price}>Price: {item.price} €</Text>
-            <Text style={styles.quantity}>Quantity: {item.quantity}</Text>
+            <Text style={styles.title} className="dark:text-black">{item.title}</Text>
+            <Text style={styles.price} className="dark:text-black">Price: {item.price} €</Text>
+            <Text style={styles.quantity} className="dark:text-black">Quantity: {item.quantity}</Text>
             <View style={styles.quantityButtons}>
 
                 <IconButton
@@ -51,6 +51,7 @@ const styles = StyleSheet.create({
     price: {
         fontSize: 16,
         fontWeight: 'bold',
+        
     },
     quantity: {
         fontSize: 14,

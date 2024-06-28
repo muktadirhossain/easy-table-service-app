@@ -16,8 +16,8 @@ function MenuCard({ item }) {
             <Card.Content className="mt-2">
                 <Text className="font-extrabold capitalize text-green-600 text-2xl">{item.title}</Text>
                 <Text className="font-semibold capitalize text-green-600 text-xl">{`Price: ${item?.price} € `}</Text>
-                <Text className="my-1 font-semibold capitalize">Code: {item.itemCode}</Text>
-                <Text className="mb-2 font-semibold capitalize text-md">category: {item?.category?.categoryName}</Text>
+                <Text className="my-1 font-semibold capitalize text-black">Code: {item.itemCode}</Text>
+                <Text className="mb-2 font-semibold capitalize text-md text-black">category: {item?.category?.categoryName}</Text>
             </Card.Content>
             <Card.Actions >
                 <View className="w-full flex-row justify-evenly items-center">

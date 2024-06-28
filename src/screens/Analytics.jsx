@@ -30,7 +30,7 @@ const Analytics = () => {
                     <Card.Content>
                         <Text className="text-xl font-bold text-green-500" >
                             Total Orders: {data?.orders?.length}</Text>
-                        <Text className="text-lg">Total Amount: {totalOrderAmount} {currency}</Text>
+                        <Text className="text-lg text-black">Total Amount: {totalOrderAmount} {currency}</Text>
                     </Card.Content>
                     {/* <Card.Actions>
                         <Button mode='contained'
@@ -43,7 +43,7 @@ const Analytics = () => {
                 <Card className="bg-green-50 m-2">
                     <Card.Content>
                         <Text className="text-xl font-bold text-green-500" >Pending Orders: {data?.pendingOrders?.length}</Text>
-                        <Text className="text-lg">Total Amount: {pendingOrderAmount} {currency}</Text>
+                        <Text className="text-lg text-black">Total Amount: {pendingOrderAmount} {currency}</Text>
                     </Card.Content>
                     <Card.Actions>
                         <Button mode='contained'
@@ -57,7 +57,7 @@ const Analytics = () => {
                 <Card className="bg-green-50 m-2">
                     <Card.Content>
                         <Text className="text-xl font-bold text-green-500" >Paid Orders: {data?.paidOrders?.length}</Text>
-                        <Text className="text-lg">Total Amount: {paidOrderAmount} {currency}</Text>
+                        <Text className="text-lg text-black">Total Amount: {paidOrderAmount} {currency}</Text>
                     </Card.Content>
                     <Card.Actions>
                         <Button mode='contained'
@@ -71,7 +71,7 @@ const Analytics = () => {
                 <Card className="bg-green-50 m-2">
                     <Card.Content>
                         <Text className="text-xl font-bold text-rose-500" >Canceled Orders: {data?.canceledOrders?.length}</Text>
-                        <Text className="text-lg">Total Amount: {canceledOrderAmount} {currency}</Text>
+                        <Text className="text-lg text-black">Total Amount: {canceledOrderAmount} {currency}</Text>
                     </Card.Content>
                     <Card.Actions>
                         <Button
